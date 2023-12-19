@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Done it?</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">To-do</string>
+    <string name="previous">Previous</string>
+
+    <string name="toast_button_text">Stats</string>
+    <string name="random_button">Random</string>
+    <string name="count_button_text">Count</string>
+    <string name="todo_button_Text">Todo1</string>
+    <string name="hint">Enter ToDo </string>
+    <string name="createNewTaskText">New Task</string>
+
+    <string-array name="intensity_array">
+        <item>LOW</item>
+        <item>MEDIUM</item>
+        <item>HIGH</item>
+    </string-array>
+
+    <string-array name="duration_array">
+        <item>SHORT</item>
+        <item>MODERATE</item>
+        <item>LONG</item>
+    </string-array>
+</resources>
