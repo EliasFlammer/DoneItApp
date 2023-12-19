@@ -4,7 +4,7 @@ public class TodoModel {
     private int id;
     private int status;
     private String title;
-
+    private String time;
     private Intensity intensity;
     private Duration duration;
     private int hidden;
