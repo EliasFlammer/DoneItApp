@@ -1,15 +1,12 @@
-package com.example.myjavaapp;
+package com.a.doneItApp;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-import com.example.myjavaapp.ToDoPackage.TodoModel;
-import com.example.myjavaapp.utils.DatabaseHandler;
+import com.a.doneItApp.ToDoPackage.TodoModel;
+import com.a.doneItApp.utils.DatabaseHandler;
 
-import java.text.SimpleDateFormat;
-import java.util.Calendar;
-import java.util.Date;
 import java.util.List;
 
 public class PointsViewModel extends ViewModel {
@@ -17,10 +14,6 @@ public class PointsViewModel extends ViewModel {
 
     public LiveData<Integer> getPointsLiveData() {
         return pointsLiveData;
-    }
-
-    public void setPointsLiveData(int points) {
-        pointsLiveData.setValue(points);
     }
 
     public void calculateAllPoints(DatabaseHandler db) {
@@ -32,8 +25,14 @@ public class PointsViewModel extends ViewModel {
                 TodoModel.Intensity intensity = ufgabe.getIntensity();
                 TodoModel.Duration duration = ufgabe.getDuration();
                 switch (intensity) {
+                    case INTENSITY:
+                        pointValue += 0;
+                        break;
                     case LOW:
                         switch (duration) {
+                            case DURATION:
+                                pointValue+= 0;
+                                break;
                             case SHORT:
                                 pointValue += 10;
                                 break;
@@ -47,6 +46,9 @@ public class PointsViewModel extends ViewModel {
                         break;
                     case MEDIUM:
                         switch (duration) {
+                            case DURATION:
+                                pointValue+= 0;
+                                break;
                             case SHORT:
                                 pointValue += 20;
                                 break;
@@ -60,6 +62,9 @@ public class PointsViewModel extends ViewModel {
                         break;
                     case HIGH:
                         switch (duration) {
+                            case DURATION:
+                                pointValue+= 0;
+                                break;
                             case SHORT:
                                 pointValue += 30;
                                 break;

@@ -1,4 +1,4 @@
-package com.example.myjavaapp.ToDoPackage;
+package com.a.doneItApp.ToDoPackage;
 
 import android.content.DialogInterface;
 import android.os.Bundle;
@@ -10,16 +10,17 @@ import android.widget.TextView;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
+import androidx.navigation.fragment.NavHostFragment;
 import androidx.recyclerview.widget.ItemTouchHelper;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.myjavaapp.MainActivity;
-import com.example.myjavaapp.PointsViewModel;
-import com.example.myjavaapp.R;
-import com.example.myjavaapp.ToDoPackage.Adapter.ToDoAdapter;
-import com.example.myjavaapp.utils.AddNewTask;
-import com.example.myjavaapp.utils.DatabaseHandler;
+import com.a.doneItApp.MainActivity;
+import com.a.doneItApp.PointsViewModel;
+import com.a.doneItApp.R;
+import com.a.doneItApp.ToDoPackage.Adapter.ToDoAdapter;
+import com.a.doneItApp.utils.AddNewTask;
+import com.a.doneItApp.utils.DatabaseHandler;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import java.util.ArrayList;
@@ -31,6 +32,7 @@ public class TodoFragment extends Fragment implements DialogCloseListener {
     private ToDoAdapter tasksAdapter;
     private FloatingActionButton fabAddTask;
     private FloatingActionButton fabDeleteTasks;
+    private FloatingActionButton fabBack;
     private List<TodoModel> taskList;
     private DatabaseHandler db;
     private TextView pointsTextView;
@@ -58,6 +60,7 @@ public class TodoFragment extends Fragment implements DialogCloseListener {
 
         fabAddTask = rootView.findViewById(R.id.addTaskButton);
         fabDeleteTasks = rootView.findViewById(R.id.deleteTaskFAB);
+        fabBack = rootView.findViewById(R.id.back);
 
         ItemTouchHelper itemTouchHelper = new
                 ItemTouchHelper(new RecylclerItemTouchHelper(tasksAdapter));
@@ -80,6 +83,13 @@ public class TodoFragment extends Fragment implements DialogCloseListener {
             }
         });
 
+        fabBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                NavHostFragment.findNavController(TodoFragment.this)
+                        .navigate(R.id.action_SecondFragment_to_FirstFragment);;
+            }
+        });
         pointsViewModel.getPointsLiveData().observe(getViewLifecycleOwner(), new Observer<Integer>() {
             @Override
             public void onChanged(Integer score) {

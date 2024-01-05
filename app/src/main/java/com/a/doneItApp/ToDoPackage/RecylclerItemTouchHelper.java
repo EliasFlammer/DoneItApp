@@ -1,7 +1,6 @@
-package com.example.myjavaapp.ToDoPackage;
+package com.a.doneItApp.ToDoPackage;
 
 import android.app.AlertDialog;
-import android.content.Context;
 import android.content.DialogInterface;
 import android.graphics.Canvas;
 import android.graphics.Color;
@@ -13,9 +12,8 @@ import androidx.core.content.ContextCompat;
 import androidx.recyclerview.widget.ItemTouchHelper;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.myjavaapp.R;
-import com.example.myjavaapp.ToDoPackage.Adapter.ToDoAdapter;
-import com.example.myjavaapp.ToDoPackage.TodoModel;
+import com.a.doneItApp.R;
+import com.a.doneItApp.ToDoPackage.Adapter.ToDoAdapter;
 
 public class RecylclerItemTouchHelper extends ItemTouchHelper.SimpleCallback {
 
@@ -39,13 +37,12 @@ public class RecylclerItemTouchHelper extends ItemTouchHelper.SimpleCallback {
             AlertDialog.Builder builder = new AlertDialog.Builder(adapter.getContext());
             builder.setTitle("Delete Task");
             builder.setMessage("Are you sure you want to delete this Task?");
-            builder.setPositiveButton("Confirm",
-                    new DialogInterface.OnClickListener() {
-                        @Override
-                        public void onClick(DialogInterface dialog, int which) {
-                            adapter.deleteItem(position);
-                        }
-                    });
+            builder.setPositiveButton("Confirm", new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialog, int which) {
+                    adapter.deleteItem(position);
+                }
+            });
             builder.setNegativeButton(android.R.string.cancel, new DialogInterface.OnClickListener() {
                 @Override
                 public void onClick(DialogInterface dialog, int which) {
@@ -54,13 +51,10 @@ public class RecylclerItemTouchHelper extends ItemTouchHelper.SimpleCallback {
             });
             AlertDialog dialog = builder.create();
             dialog.show();
-
         }
         else {
             adapter.editItem(position);
             adapter.notifyDataSetChanged();
-           //refresh view?
-
         }
     }
     @Override

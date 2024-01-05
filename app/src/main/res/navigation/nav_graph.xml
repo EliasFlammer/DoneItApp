@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/FirstFragment"
-        android:name="com.example.myjavaapp.FirstFragment"
+        android:name="com.a.doneItApp.FirstFragment"
         android:label="@string/first_fragment_label"
         tools:layout="@layout/fragment_first">
 
@@ -20,7 +20,7 @@
     </fragment>
     <fragment
         android:id="@+id/SecondFragment"
-        android:name="com.example.myjavaapp.ToDoPackage.TodoFragment"
+        android:name="com.a.doneItApp.ToDoPackage.TodoFragment"
         android:label="@string/second_fragment_label"
         tools:layout="@layout/new_todo_fragment">
 
@@ -30,7 +30,7 @@
     </fragment>
     <fragment
         android:id="@+id/todo_fragment"
-        android:name="com.example.myjavaapp.Todo_fragment"
+        android:name="com.example.doneItApp.Todo_fragment"
         android:label="fragment_todo_fragment"
         tools:layout="@layout/fragment_todo_fragment" />
 </navigation>

@@ -1,5 +1,5 @@
-package com.example.myjavaapp;
-
+package com.a.doneItApp;
+//aint made for darkmode
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.os.Bundle;
@@ -15,8 +15,8 @@ import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 import androidx.navigation.fragment.NavHostFragment;
 
-import com.example.myjavaapp.databinding.FragmentFirstBinding;
-import com.example.myjavaapp.utils.DatabaseHandler;
+import com.a.doneItApp.databinding.FragmentFirstBinding;
+import com.a.doneItApp.utils.DatabaseHandler;
 
 public class FirstFragment extends Fragment {
     private TextView scoreTextView;

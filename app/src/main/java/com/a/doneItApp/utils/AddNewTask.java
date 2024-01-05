@@ -1,6 +1,5 @@
-package com.example.myjavaapp.utils;
+package com.a.doneItApp.utils;
 
-import android.app.Activity;
 import android.content.DialogInterface;
 import android.graphics.Color;
 import android.os.Bundle;
@@ -19,12 +18,10 @@ import android.widget.Spinner;
 import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
 
-import com.example.myjavaapp.ToDoPackage.DialogCloseListener;
-import com.example.myjavaapp.R;
-import com.example.myjavaapp.ToDoPackage.TodoModel;
+import com.a.doneItApp.ToDoPackage.DialogCloseListener;
+import com.a.doneItApp.ToDoPackage.TodoModel;
+import com.a.doneItApp.R;
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment;
-
-import java.util.Collections;
 
 //wenn ich de edit Task bar nöd am bode wott ha denn muss ich bottomdialog zu öppis anderem Ändere
 public class AddNewTask  extends BottomSheetDialogFragment {
@@ -45,6 +42,7 @@ public class AddNewTask  extends BottomSheetDialogFragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setStyle(STYLE_NORMAL, R.style.DialogStyle);
+
     }
 
     @Override
@@ -158,7 +156,7 @@ public class AddNewTask  extends BottomSheetDialogFragment {
                         db.insertTask(task);
                     }
 
-                    dismiss();
+                dismiss();
             }
         });
 

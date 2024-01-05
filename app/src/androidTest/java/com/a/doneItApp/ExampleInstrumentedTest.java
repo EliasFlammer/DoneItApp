@@ -1,4 +1,4 @@
-package com.example.myjavaapp;
+package com.a.doneItApp;
 
 import android.content.Context;
 

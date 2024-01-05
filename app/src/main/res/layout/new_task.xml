@@ -7,9 +7,10 @@
         android:layout_width="wrap_content"
         android:layout_height="48dp"
         android:background="@null"
-        android:textSize="23dp"
+        android:fontFamily="@font/nunito_sans_bold_italic"
+        android:hint="Enter New Task Here"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-        android:hint="Enter New Task Here"/>
+        android:textSize="23dp" />
     
     <Button
         android:id="@+id/saveNewTaskButton"
@@ -38,6 +39,7 @@
         android:layout_marginStart="0dp"
         android:layout_marginTop="0dp"
         android:layout_toEndOf="@+id/spinnerIntensity"
-        android:entries="@array/duration_array" />
+        android:entries="@array/duration_array"
+        />
 
 </RelativeLayout>

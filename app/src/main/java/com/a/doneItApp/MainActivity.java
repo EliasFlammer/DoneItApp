@@ -1,23 +1,18 @@
-package com.example.myjavaapp;
+package com.a.doneItApp;
 
 import android.content.DialogInterface;
 import  android.os.Bundle;
 
-import com.example.myjavaapp.ToDoPackage.Adapter.ToDoAdapter;
-import com.example.myjavaapp.ToDoPackage.DialogCloseListener;
-import com.google.android.material.snackbar.Snackbar;
+import com.a.doneItApp.ToDoPackage.DialogCloseListener;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.view.View;
-
-import androidx.core.view.WindowCompat;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
-import com.example.myjavaapp.databinding.ActivityMainBinding;
+import com.a.doneItApp.databinding.ActivityMainBinding;
 
 import android.view.Menu;
 import android.view.MenuItem;

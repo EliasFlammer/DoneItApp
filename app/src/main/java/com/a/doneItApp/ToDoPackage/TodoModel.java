@@ -1,36 +1,30 @@
-package com.example.myjavaapp.ToDoPackage;
+package com.a.doneItApp.ToDoPackage;
 
 public class TodoModel {
     private int id;
     private int status;
     private String title;
-    private String time;
     private Intensity intensity;
     private Duration duration;
     private int hidden;
-
-    //getter and setter methods are here so that if you make a change to something regarding the variable,
-    // you dont have to change it multiple times but you can change it in those methods here
     public enum Intensity {
+        INTENSITY,
         LOW,
         MEDIUM,
         HIGH
     }
-
     public enum Duration{
+        DURATION,
         SHORT,
         MODERATE,
         LONG
     }
-
     public Intensity getIntensity() {
         return intensity;
     }
-
     public void setIntensity(Intensity intensity) {
         this.intensity = intensity;
     }
-
     public Duration getDuration() {
         return duration;
     }
@@ -70,7 +64,6 @@ public class TodoModel {
     public void setHidden(int hidden) {
         this.hidden = hidden;
     }
-
-
 }
-
+//getter and setter methods are here so that if you make a change to something regarding the variable,
+// you dont have to change it multiple times but you can change it in those methods here

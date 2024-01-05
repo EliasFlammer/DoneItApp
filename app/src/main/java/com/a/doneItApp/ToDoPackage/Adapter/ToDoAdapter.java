@@ -1,4 +1,4 @@
-package com.example.myjavaapp.ToDoPackage.Adapter;
+package com.a.doneItApp.ToDoPackage.Adapter;
 
 import android.content.Context;
     import android.os.Bundle;
@@ -15,12 +15,12 @@ import android.content.Context;
 
     import java.util.List;
 
-    import com.example.myjavaapp.MainActivity;
-    import com.example.myjavaapp.PointsViewModel;
-    import com.example.myjavaapp.R;
-    import com.example.myjavaapp.ToDoPackage.TodoModel;
-    import com.example.myjavaapp.utils.AddNewTask;
-    import com.example.myjavaapp.utils.DatabaseHandler;
+import com.a.doneItApp.ToDoPackage.TodoModel;
+import com.a.doneItApp.MainActivity;
+    import com.a.doneItApp.PointsViewModel;
+    import com.a.doneItApp.R;
+import com.a.doneItApp.utils.AddNewTask;
+    import com.a.doneItApp.utils.DatabaseHandler;
 
     public class ToDoAdapter extends RecyclerView.Adapter<ToDoAdapter.ViewHolder> {
         private List<TodoModel> todoList;

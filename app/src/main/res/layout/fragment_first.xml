@@ -9,8 +9,8 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:padding="16dp">
-
+        android:padding="16dp"
+        android:background="#FFFFFF">
         <TextView
             android:id="@+id/score2"
             android:layout_width="wrap_content"
@@ -21,7 +21,7 @@
             android:textSize="36sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.467"
+
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.3" />
@@ -46,14 +46,15 @@
             android:id="@+id/button_next"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/next"
-            android:textSize="25dp"
-            android:fontFamily="@font/nunito_sans_bold_italic"
-            android:textColor="@android:color/black"
-            android:layout_marginEnd="24dp"
             android:layout_marginTop="64dp"
+            android:layout_marginEnd="24dp"
+            android:fontFamily="@font/nunito_sans_bold_italic"
+            android:text="@string/next"
+            android:textColor="@android:color/black"
+            android:textSize="25dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            android:backgroundTint="@android:color/holo_blue_dark"
             app:layout_constraintTop_toBottomOf="@+id/score2" />
 
         <Button
@@ -66,6 +67,7 @@
             android:text="@string/toast_button_text"
             android:textColor="@android:color/black"
             android:textSize="25dp"
+            android:backgroundTint="@android:color/holo_blue_dark"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/score2" />
@@ -81,6 +83,8 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.543"
             app:layout_constraintStart_toStartOf="parent"
+            android:textColor="@android:color/black"
+            android:backgroundTint="@android:color/holo_blue_dark"
             app:layout_constraintTop_toTopOf="parent" />
 
 

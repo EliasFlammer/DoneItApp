@@ -1,4 +1,4 @@
-package com.example.myjavaapp.ToDoPackage;
+package com.a.doneItApp.ToDoPackage;
 
 import android.content.DialogInterface;
 

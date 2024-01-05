@@ -15,12 +15,14 @@
     <string name="createNewTaskText">New Task</string>
 
     <string-array name="intensity_array">
+        <item>INTENSITY</item>
         <item>LOW</item>
         <item>MEDIUM</item>
         <item>HIGH</item>
     </string-array>
 
     <string-array name="duration_array">
+        <item>DURATION</item>
         <item>SHORT</item>
         <item>MODERATE</item>
         <item>LONG</item>
