@@ -30,6 +30,7 @@ import java.util.List;
 public class TodoFragment extends Fragment implements DialogCloseListener {
     private RecyclerView tasksRecyclerview;
     private ToDoAdapter tasksAdapter;
+
     private FloatingActionButton fabAddTask;
     private FloatingActionButton fabDeleteTasks;
     private FloatingActionButton fabBack;
